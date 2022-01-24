@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Activities',
-      'description' => 'Extended Report - Activities, includes multi-contact custom fields',
+      'label' => 'Activities (Extended)',
+      'description' => 'All Activities with extra fields',
       'class_name' => 'CRM_Extendedreport_Form_Report_ActivityExtended',
       'report_url' => 'activityextended',
       'component' => '',

@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Relationships',
-      'description' => 'Extended Report - Relationships, includes data from both sides of the relationship',
+      'label' => 'Relationships (Detailed)',
+      'description' => 'All Relationships with extra fields',
       'class_name' => 'CRM_Extendedreport_Form_Report_RelationshipExtended',
       'report_url' => 'relationshipextended',
       'component' => '',

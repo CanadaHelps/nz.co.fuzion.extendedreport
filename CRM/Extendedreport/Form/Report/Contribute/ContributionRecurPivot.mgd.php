@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Recurring Contribution Pivot Chart',
-      'description' => 'Extended Report - Contribution Recur Pivot Chart',
+      'label' => 'Recurring Contributions (Extended, Pivot Chart)',
+      'description' => 'Total amounts raised for Recurring Contributions with extra fields, in a pivot chart',
       'class_name' => 'CRM_Extendedreport_Form_Report_Contribute_ContributionRecurPivot',
       'report_url' => 'contribution/recur-pivot',
       'component' => 'CiviContribute',

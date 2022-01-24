@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Contribution Pivot Chart',
-      'description' => 'Extended Report - Contribution Pivot Chart',
+      'label' => 'Contributions (Extended, Pivot Chart)',
+      'description' => 'Total amounts raised with extra fields, in a pivot chart',
       'class_name' => 'CRM_Extendedreport_Form_Report_Contribute_ContributionPivot',
       'report_url' => 'contribution/pivot',
       'component' => 'CiviContribute',

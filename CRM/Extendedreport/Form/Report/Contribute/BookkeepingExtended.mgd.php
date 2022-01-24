@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Bookkeeping with extra fields',
-      'description' => 'Extended Report - Bookkeeping with extra fields',
+      'label' => 'Contributions for Bookkeeping (Detailed)',
+      'description' => 'Total amounts raised with bookkeeping transactions information',
       'class_name' => 'CRM_Extendedreport_Form_Report_Contribute_BookkeepingExtended',
       'report_url' => 'contribution/bookkeeping_extended',
       'component' => 'CiviContribute',

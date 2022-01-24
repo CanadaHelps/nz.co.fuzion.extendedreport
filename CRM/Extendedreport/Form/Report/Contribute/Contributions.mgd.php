@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Contributions',
-      'description' => 'Extended Report - Contributions',
+      'label' => 'Contributions (Detailed)',
+      'description' => 'Total amounts raised with individual Contribution information',
       'class_name' => 'CRM_Extendedreport_Form_Report_Contribute_Contributions',
       'report_url' => 'contribution/contributions',
       'component' => 'CiviContribute',

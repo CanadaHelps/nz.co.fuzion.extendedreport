@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Editable Activities',
-      'description' => 'Extended Report - editable Activity Report',
+      'label' => 'Activities (Detailed)',
+      'description' => 'All Activities with detailed information',
       'class_name' => 'CRM_Extendedreport_Form_Report_ActivityEditable',
       'report_url' => 'activityeditable',
       'component' => '',

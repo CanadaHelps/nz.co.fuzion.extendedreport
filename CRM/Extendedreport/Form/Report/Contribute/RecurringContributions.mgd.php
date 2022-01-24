@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Recurring Contributions',
-      'description' => 'Extended Report - Recurring Contributions',
+      'label' => 'Recurring Contributions (Detailed)',
+      'description' => 'Total amounts raised from Recurring Contributions with individual Contribution information',
       'class_name' => 'CRM_Extendedreport_Form_Report_Contribute_RecurringContributions',
       'report_url' => 'contribution/recurring_contributions',
       'component' => 'CiviContribute',

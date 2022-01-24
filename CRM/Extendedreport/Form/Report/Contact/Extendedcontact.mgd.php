@@ -11,8 +11,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Pivot data contact report',
-      'description' => 'Extended Report - Pivot data Contact Report',
+      'label' => 'Contacts (Extended, Pivot Chart)',
+      'description' => 'All Contacts with extra fields, in a pivot chart',
       'class_name' => 'CRM_Extendedreport_Form_Report_Contact_Extendedcontact',
       'report_url' => 'contact/contactextended',
       'component' => '',

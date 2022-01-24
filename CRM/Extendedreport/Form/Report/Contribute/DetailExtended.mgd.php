@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Contributions Detail with extra fields',
-      'description' => 'Extended Report - Contributions= Detail with extra fields',
+      'label' => 'Contributions (Extended, Extra Fields)',
+      'description' => 'Total amounts raised with extra fields',
       'class_name' => 'CRM_Extendedreport_Form_Report_Contribute_DetailExtended',
       'report_url' => 'contribution/detailextended',
       'component' => 'CiviContribute',

@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Activity Pivot Chart',
-      'description' => 'Extended Report - Activity Pivot Chart',
+      'label' => 'Activities (Extended, Pivot Chart)',
+      'description' => 'All Activities with extra fields, in a pivot chart',
       'class_name' => 'CRM_Extendedreport_Form_Report_ActivityPivot',
       'report_url' => 'activity/pivot',
       'component' => '',

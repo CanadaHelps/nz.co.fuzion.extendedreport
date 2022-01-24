@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Flexible contact report',
-      'description' => 'Extended Report - Report has basic contact information with a few extensions such as multiple phones, tag lists, latest activity',
+      'label' => 'Contacts (Detailed)',
+      'description' => 'All Contacts with latest Activity information',
       'class_name' => 'CRM_Extendedreport_Form_Report_Contact_Basiccontact',
       'report_url' => 'contact/contactbasic',
       'component' => '',
