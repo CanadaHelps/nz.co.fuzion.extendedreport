@@ -9,8 +9,8 @@ return [
     'entity' => 'ReportTemplate',
     'params' => [
       'version' => 3,
-      'label' => 'Extended Report - Grant Detail',
-      'description' => 'Extended Report - Grant Detail',
+      'label' => 'Opportunity (Detailed)',
+      'description' => 'All Opportunities with detailed information',
       'class_name' => 'CRM_Extendedreport_Form_Report_Grant_Detail',
       'report_url' => 'grant/detailextended',
       'component' => 'CiviGrant',
