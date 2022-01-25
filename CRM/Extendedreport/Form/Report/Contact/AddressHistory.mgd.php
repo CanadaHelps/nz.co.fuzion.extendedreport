@@ -13,7 +13,7 @@ return [
         [
           'version' => 3,
           'label' => 'Address History',
-          'description' => 'ContactAddress History',
+          'description' => 'Log of Contact Address History',
           'class_name' => 'CRM_Extendedreport_Form_Report_Contact_AddressHistory',
           'report_url' => 'contact/addresshistory',
           'component' => '',
