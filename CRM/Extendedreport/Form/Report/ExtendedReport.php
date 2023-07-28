@@ -2348,7 +2348,6 @@ LEFT JOIN civicrm_contact {$prop['alias']} ON {$prop['alias']}.id = {$this->_ali
       $this->_noGroupBY = TRUE;
       return;
     }
-    $this->_select = "SELECT {$selectedField['dbAlias']} as $fieldAlias ";
      //CRM-1879- This condition should applicable only for contribution_page_id
     if(($selectedField['dbAlias']) == 'contribution.contribution_page_id')
     {
