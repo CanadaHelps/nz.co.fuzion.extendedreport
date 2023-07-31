@@ -1807,7 +1807,13 @@ class CRM_Extendedreport_Form_Report_ExtendedReport extends CRM_Report_Form {
         $where = "Where " . $rowFields[0]['dbAlias'] . " = " . $rowFieldId;
       }
       elseif (!empty($rowFieldId) && is_string($rowFieldId) && $rowFieldId !== 'HEADER') {
-        $where = "Where " . $rowFields[0]['dbAlias'] . " LIKE '%" . $rowFieldId . "%'";
+       // CRM-1879-Incorrect total for summary field- added 'Unassigned' rowField ID for contributions with contributions page id 'NULL'
+        if($rowFieldId == 'Unassigned')
+        {
+          $where = "Where " . $rowFields[0]['dbAlias'] . " IS NULL ";
+        }else{
+          $where = "Where " . $rowFields[0]['dbAlias'] . " LIKE '%" . $rowFieldId . "%'";
+        }
       }
 
       // Custom fields join.
@@ -2342,7 +2348,13 @@ LEFT JOIN civicrm_contact {$prop['alias']} ON {$prop['alias']}.id = {$this->_ali
       $this->_noGroupBY = TRUE;
       return;
     }
-    $this->_select = "SELECT {$selectedField['dbAlias']} as $fieldAlias ";
+     //CRM-1879- This condition should applicable only for contribution_page_id
+    if(($selectedField['dbAlias']) == 'contribution.contribution_page_id')
+    {
+      $this->_select = "SELECT  ( CASE WHEN {$selectedField['dbAlias']} IS NULL THEN 'Unassigned' ELSE {$selectedField['dbAlias']} END ) as $fieldAlias ";
+    }else{
+      $this->_select = "SELECT {$selectedField['dbAlias']} as $fieldAlias ";
+    }
     if (!in_array($fieldAlias, $this->_groupByArray, TRUE)) {
       $this->_groupByArray[] = $fieldAlias;
     }
@@ -6403,7 +6415,13 @@ ON ({$this->_aliases['civicrm_event']}.id = {$this->_aliases['civicrm_participan
    * @return mixed
    */
   function alterContributionPage($value) {
-    $title = CRM_Contribute_PseudoConstant::contributionPage($value);
+    //CRM-1879- for unassigned fund gave title 'Unassigned Fund'
+     if($value == 'Unassigned')
+     {
+       $title = 'Unassigned Fund';
+     }else{
+      $title = CRM_Contribute_PseudoConstant::contributionPage($value,TRUE);
+    }
     return $title;
   }
 
